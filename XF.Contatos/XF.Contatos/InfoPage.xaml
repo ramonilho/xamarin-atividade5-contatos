@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XF.Contatos.InfoPage"
+             Title="Contato">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center">
+
+            <Image WidthRequest="300" HeightRequest="200" x:Name="imgFoto" />
+            <Button x:Name="btnCamera" Text="Foto" Clicked="btnCamera_Clicked" />
+            <Button x:Name="btnSelecionar" Text="Selecionar" Clicked="btnSelecionar_Clicked" />
+            
+            <Button x:Name="btnLigar" Text="Ligar" 
+                    Clicked="btnLigar_Clicked"/>
+
+            <Button x:Name="btnMapa" Text="Ver no Mapa" 
+                    Clicked="btnMapa_Clicked"/>
+            <Label x:Name="lblLatitude" />
+            <Label x:Name="lblLongitude" />
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
